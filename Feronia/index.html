@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feronia | Wildlife Facility System Portal</title>
+  <meta name="description" content="Access portal for Feronia Wildlife Facility Management System. Please select your role to proceed.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="portal-body">
+
+  <div class="portal-container">
+    <div class="portal-card">
+      <div class="portal-logo">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L3 7V12C3 17.5 7.2 21.3 12 22C16.8 21.3 21 17.5 21 12V7L12 2Z" fill="#10b981" stroke="#F59E0B" stroke-width="1.5"/>
+          <path d="M9 12L11 14L15 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="portal-logo-text">
+          <h1>FERONIA</h1>
+          <span>Wildlife Facility Management System</span>
+        </div>
+      </div>
+
+      <div class="portal-header">
+        <h2>Welcome to Feronia</h2>
+        <p>Please select your portal role to access your dashboard, schedules, and analytics.</p>
+      </div>
+
+      <div class="portal-roles-grid">
+        
+        <!-- Administrator Card -->
+        <a href="admin.html" class="portal-role-card role-admin">
+          <div class="role-icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <div class="role-details">
+            <h3>Administrator</h3>
+            <p>Access inventory forecasts, breeding lifecycles, and user permissions.</p>
+          </div>
+          <div class="role-arrow">
+            <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+
+        <!-- Keeper Card -->
+        <a href="keeper.html" class="portal-role-card role-keeper">
+          <div class="role-icon">
+            <i data-lucide="clipboard-list"></i>
+          </div>
+          <div class="role-details">
+            <h3>Wildlife Keeper</h3>
+            <p>Record daily cleanings, feedings, enclosure observations, and check tasks.</p>
+          </div>
+          <div class="role-arrow">
+            <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+
+        <!-- Veterinarian Card -->
+        <a href="veterinarian.html" class="portal-role-card role-vet">
+          <div class="role-icon">
+            <i data-lucide="folder-heart"></i>
+          </div>
+          <div class="role-details">
+            <h3>Veterinary Suite</h3>
+            <p>Monitor priority health cases, clinical schedules, and diagnostic records.</p>
+          </div>
+          <div class="role-arrow">
+            <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="portal-footer">
+        <p>© 2025 FERONIA Facility Systems. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
